@@ -7,5 +7,3 @@ This doesn't have any docs because im lazy and I need to finish this by tommorow
 
 
 Oh yeah and https://www.kaggle.com/chetankv/dogs-cats-images/data
-
-Lol signed btw

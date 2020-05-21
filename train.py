@@ -20,3 +20,18 @@ import cv2
 import os
 
 def setupDataset(dataset):
+    print("Loading....")
+    data = []
+    labels = []
+    imagePaths = sorted(list(paths.list_images(dataset)))
+    random.seed(23)
+    random.shuffle(imagePaths)
+    count = 0
+    for Images in imagePaths:
+        count = count + 1
+        print("[Status] {}/{}".format(len(imagePaths), count))
+        image = cv2.imread(Image)
+        image = cv2.resize(image, (75, 75)).flatten()
+        data.append(image)
+        label = imagePath.split(os.path.sep)[-2]
+        labels.append(label)
